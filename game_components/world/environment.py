@@ -6,6 +6,7 @@ class Environment:
     carbon_dioxide = 0.05
     toxic_gases = 0.0
     hydrogen = 0.0
+    temperature = 19
 
     def pressure(self):
         total_gases = self.oxygen + self.nitrogen + self.carbon_dioxide + self.toxic_gases
