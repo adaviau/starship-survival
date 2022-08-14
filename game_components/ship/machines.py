@@ -3,14 +3,18 @@
 class Machine:
     def __init__(self, function):
         self.function = function
-        __operational = True
-        __powered = False
+        self.__operational = True
+        self.__powered = False
+        self.__running = False
 
     def is_operational(self):
         return self.__operational
 
     def is_powered(self):
         return self.__powered
+
+    def is_running(self):
+        return self.__running
 
     def state_information(self):
         output = self.function + " machine is "

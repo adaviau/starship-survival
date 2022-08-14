@@ -1,14 +1,11 @@
-import sys
-from game_components.ship import Ship
-from game_components.world import Environment
-from game_components.ship import Heater
+from game_components import State
 
+game = State()
+print( game.ship.name )
 
-ship = Ship()
-print( ship.description() )
+print( game.ship.connections[0].connected_pair[0].name )
+print( game.ship.connections[0].connected_pair[1].name )
 
-
-heater = Heater()
 
 
 
